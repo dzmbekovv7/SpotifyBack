@@ -29,7 +29,7 @@ initializeSocket(httpServer);
 
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: "https://spotify-front-tau.vercel.app",
 		credentials: true,
 	})
 );
