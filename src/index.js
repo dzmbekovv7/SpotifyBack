@@ -25,7 +25,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 const httpServer = createServer(app);
-initializeSocket(httpServer);
+initializeSocket(httpServer); 
 
 app.use(
 	cors({
