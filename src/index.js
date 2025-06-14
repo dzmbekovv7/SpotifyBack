@@ -29,10 +29,14 @@ initializeSocket(httpServer);
 
 app.use(
 	cors({
-		origin: "https://spotify-front-tau.vercel.app",
+		origin: [
+			"https://spotify-front-tau.vercel.app",
+			"http://localhost:3000",
+		],
 		credentials: true,
 	})
 );
+
 
 app.use(express.json()); // to parse req.body
 app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
